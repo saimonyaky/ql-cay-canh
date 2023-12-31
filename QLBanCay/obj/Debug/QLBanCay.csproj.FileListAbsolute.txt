@@ -8,3 +8,13 @@ D:\C#\QLBanCay\QLBanCay\obj\Debug\QLBanCay.csproj.GenerateResource.cache
 D:\C#\QLBanCay\QLBanCay\obj\Debug\QLBanCay.csproj.CoreCompileInputs.cache
 D:\C#\QLBanCay\QLBanCay\obj\Debug\QLBanCay.exe
 D:\C#\QLBanCay\QLBanCay\obj\Debug\QLBanCay.pdb
+D:\School\BaiTapNhom\ql-cay-canh\QLBanCay\bin\Debug\QLBanCay.exe.config
+D:\School\BaiTapNhom\ql-cay-canh\QLBanCay\bin\Debug\QLBanCay.exe
+D:\School\BaiTapNhom\ql-cay-canh\QLBanCay\bin\Debug\QLBanCay.pdb
+D:\School\BaiTapNhom\ql-cay-canh\QLBanCay\obj\Debug\QLBanCay.csproj.AssemblyReference.cache
+D:\School\BaiTapNhom\ql-cay-canh\QLBanCay\obj\Debug\QLBanCay.Form1.resources
+D:\School\BaiTapNhom\ql-cay-canh\QLBanCay\obj\Debug\QLBanCay.Properties.Resources.resources
+D:\School\BaiTapNhom\ql-cay-canh\QLBanCay\obj\Debug\QLBanCay.csproj.GenerateResource.cache
+D:\School\BaiTapNhom\ql-cay-canh\QLBanCay\obj\Debug\QLBanCay.csproj.CoreCompileInputs.cache
+D:\School\BaiTapNhom\ql-cay-canh\QLBanCay\obj\Debug\QLBanCay.exe
+D:\School\BaiTapNhom\ql-cay-canh\QLBanCay\obj\Debug\QLBanCay.pdb
