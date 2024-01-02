@@ -39,23 +39,23 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnTimkiem = new System.Windows.Forms.Button();
-            this.dgvTimkiemcay = new System.Windows.Forms.DataGridView();
+            this.dgvQLCay = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cbLoaiCay = new System.Windows.Forms.ComboBox();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtTenCay = new System.Windows.Forms.TextBox();
+            this.txtMaDH = new System.Windows.Forms.TextBox();
+            this.txtMaCay = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnTK = new System.Windows.Forms.Button();
             this.tabQLDH.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThemCay)).BeginInit();
             this.tabQLCay.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTimkiemcay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvQLCay)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -84,7 +84,7 @@
             // tabQLCay
             // 
             this.tabQLCay.Controls.Add(this.panel2);
-            this.tabQLCay.Controls.Add(this.dgvTimkiemcay);
+            this.tabQLCay.Controls.Add(this.dgvQLCay);
             this.tabQLCay.Location = new System.Drawing.Point(4, 29);
             this.tabQLCay.Name = "tabQLCay";
             this.tabQLCay.Padding = new System.Windows.Forms.Padding(3);
@@ -95,8 +95,8 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.btnAdd);
+            this.panel2.Controls.Add(this.cbLoaiCay);
             this.panel2.Controls.Add(this.txtTimkiemMa);
             this.panel2.Controls.Add(this.txtTimkiemTen);
             this.panel2.Controls.Add(this.label3);
@@ -161,14 +161,14 @@
             this.btnTimkiem.Text = "Tìm kiếm";
             this.btnTimkiem.UseVisualStyleBackColor = false;
             // 
-            // dgvTimkiemcay
+            // dgvQLCay
             // 
-            this.dgvTimkiemcay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTimkiemcay.Location = new System.Drawing.Point(1, 126);
-            this.dgvTimkiemcay.Name = "dgvTimkiemcay";
-            this.dgvTimkiemcay.RowHeadersWidth = 51;
-            this.dgvTimkiemcay.Size = new System.Drawing.Size(994, 421);
-            this.dgvTimkiemcay.TabIndex = 7;
+            this.dgvQLCay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvQLCay.Location = new System.Drawing.Point(1, 126);
+            this.dgvQLCay.Name = "dgvQLCay";
+            this.dgvQLCay.RowHeadersWidth = 51;
+            this.dgvQLCay.Size = new System.Drawing.Size(994, 421);
+            this.dgvQLCay.TabIndex = 7;
             // 
             // tabControl1
             // 
@@ -180,60 +180,61 @@
             this.tabControl1.Size = new System.Drawing.Size(1005, 586);
             this.tabControl1.TabIndex = 0;
             // 
-            // comboBox1
+            // cbLoaiCay
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(667, 21);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(159, 28);
-            this.comboBox1.TabIndex = 4;
+            this.cbLoaiCay.FormattingEnabled = true;
+            this.cbLoaiCay.Location = new System.Drawing.Point(667, 21);
+            this.cbLoaiCay.Name = "cbLoaiCay";
+            this.cbLoaiCay.Size = new System.Drawing.Size(159, 28);
+            this.cbLoaiCay.TabIndex = 4;
             // 
-            // button1
+            // btnAdd
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(29, 79);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(131, 30);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Thêm cây mới";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnAdd.BackColor = System.Drawing.Color.White;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnAdd.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnAdd.Location = new System.Drawing.Point(29, 79);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(131, 30);
+            this.btnAdd.TabIndex = 5;
+            this.btnAdd.Text = "Thêm cây mới";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.txtTenCay);
+            this.panel1.Controls.Add(this.txtMaDH);
+            this.panel1.Controls.Add(this.txtMaCay);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btnTK);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(993, 73);
             this.panel1.TabIndex = 9;
             // 
-            // textBox1
+            // txtTenCay
             // 
-            this.textBox1.Location = new System.Drawing.Point(663, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(159, 26);
-            this.textBox1.TabIndex = 4;
+            this.txtTenCay.Location = new System.Drawing.Point(663, 22);
+            this.txtTenCay.Name = "txtTenCay";
+            this.txtTenCay.Size = new System.Drawing.Size(159, 26);
+            this.txtTenCay.TabIndex = 4;
             // 
-            // textBox2
+            // txtMaDH
             // 
-            this.textBox2.Location = new System.Drawing.Point(109, 21);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(159, 26);
-            this.textBox2.TabIndex = 3;
+            this.txtMaDH.Location = new System.Drawing.Point(109, 21);
+            this.txtMaDH.Name = "txtMaDH";
+            this.txtMaDH.Size = new System.Drawing.Size(159, 26);
+            this.txtMaDH.TabIndex = 3;
             // 
-            // textBox3
+            // txtMaCay
             // 
-            this.textBox3.Location = new System.Drawing.Point(396, 21);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(159, 26);
-            this.textBox3.TabIndex = 3;
+            this.txtMaCay.Location = new System.Drawing.Point(396, 21);
+            this.txtMaCay.Name = "txtMaCay";
+            this.txtMaCay.Size = new System.Drawing.Size(159, 26);
+            this.txtMaCay.TabIndex = 3;
             // 
             // label4
             // 
@@ -262,17 +263,17 @@
             this.label6.TabIndex = 2;
             this.label6.Text = "Mã cây:";
             // 
-            // button2
+            // btnTK
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button2.Location = new System.Drawing.Point(883, 22);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 30);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Tìm kiếm";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnTK.BackColor = System.Drawing.Color.White;
+            this.btnTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnTK.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnTK.Location = new System.Drawing.Point(883, 22);
+            this.btnTK.Name = "btnTK";
+            this.btnTK.Size = new System.Drawing.Size(95, 30);
+            this.btnTK.TabIndex = 1;
+            this.btnTK.Text = "Tìm kiếm";
+            this.btnTK.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -289,7 +290,7 @@
             this.tabQLCay.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTimkiemcay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvQLCay)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -309,18 +310,18 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnTimkiem;
-        private System.Windows.Forms.DataGridView dgvTimkiemcay;
+        private System.Windows.Forms.DataGridView dgvQLCay;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtTenCay;
+        private System.Windows.Forms.TextBox txtMaDH;
+        private System.Windows.Forms.TextBox txtMaCay;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btnTK;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.ComboBox cbLoaiCay;
     }
 }
 
